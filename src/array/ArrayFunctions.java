@@ -45,7 +45,9 @@ public class ArrayFunctions {
      * @return {@code true} if the value was deleted; {@code false} if the value was not present.
      */
     public boolean deleteValue(int[] array, int value) {
+        if (searchValue(array, value) != -1) {
 
+        }
         return false;
     }
 
@@ -60,11 +62,11 @@ public class ArrayFunctions {
     /**
      * This method will search for an integer value inside an integer array.
      */
-    public boolean searchValue(int[] array, int value) {
-        boolean response = false;
-        for (int i : array) {
-            if (value == i) {
-                response = true;
+    public int searchValue(int[] array, int value) {
+        int response = -1;
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] == value) {
+                response = i;
                 break;
             }
         }
