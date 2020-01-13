@@ -13,9 +13,18 @@ public class ArraySorting {
 
     }
 
-    public static void bubbleSort(int[] array) {
+    /*public static void bubbleSort(int[] array) {
         for (int j = 0; j < array.length; j++) {
             for (int i = 0; i < array.length - 1; i++) {
+                if (array[i] > array[i + 1]) {
+                    swapArrayValues(i, i + 1, array);
+                }
+            }
+        }
+    }*/
+    public static void bubbleSort(int[] array) {
+        for (int j = 0; j < array.length - j; j++) {
+            for (int i = 0; i < j; i++) {
                 if (array[i] > array[i + 1]) {
                     swapArrayValues(i, i + 1, array);
                 }
