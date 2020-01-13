@@ -22,7 +22,7 @@ public class ArraySorting {
             }
         }
     }*/
-    public static void bubbleSort(int[] array) {
+    /*public static void bubbleSort(int[] array) {
         for (int j = 0; j < array.length - j; j++) {
             for (int i = 0; i < j; i++) {
                 if (array[i] > array[i + 1]) {
@@ -30,6 +30,9 @@ public class ArraySorting {
                 }
             }
         }
+    }*/
+    public static void bubbleSort(int[] array) {
+        Arrays.sort(array);
     }
 
     private static void swapArrayValues(int i, int i1, int[] array) {
